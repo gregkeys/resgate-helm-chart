@@ -1,0 +1,46 @@
+apiVersion: v1
+entries:
+  nats:
+  - apiVersion: v2
+    appVersion: 2.3.1
+    created: "2021-07-19T13:47:01.647016-07:00"
+    description: A Helm chart for the NATS.io High Speed Cloud Native Distributed
+      Communications Technology.
+    digest: 6140acbe49801072c05fb0b99c5e9f69a201a8c1b3d80d2a102dc61c4df6ceed
+    home: http://github.com/nats-io/k8s
+    icon: https://nats.io/img/nats-icon-color.png
+    keywords:
+    - nats
+    - messaging
+    - cncf
+    maintainers:
+    - email: wally@nats.io
+      name: Waldemar Quevedo
+    - email: colin@nats.io
+      name: Colin Sullivan
+    - email: jaime@nats.io
+      name: Jaime Piña
+    name: nats
+    urls:
+    - charts/nats-0.8.2.tgz
+    version: 0.8.2
+  resgate:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-07-19T13:47:01.645786-07:00"
+    dependencies:
+    - name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 0.8.2
+    description: A Helm chart to deploy resgate and its dependencies
+    digest: 6033d0885d33a534c40328e1abdf790d6c53ccfa391ec20a8e643633e395f150
+    home: https://github.com/gregkeys/resgate-helm-chart.git
+    maintainers:
+    - email: gregkeys@gmail.com
+      name: Greg Keys
+    name: resgate
+    type: application
+    urls:
+    - resgate-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-07-19T13:47:01.643676-07:00"
