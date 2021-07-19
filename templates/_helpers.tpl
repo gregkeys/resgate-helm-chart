@@ -65,6 +65,5 @@ Create the name of the service account to use
 Return the proper NATS image name
 */}}
 {{- define "nats.serviceAddress" -}}
-{{- $chartname := default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
-{{- printf "%s-nats.%s.svc.%s" $chartname .Release.Namespace $.Values.k8sClusterDomain }}
+{{- printf "%s-nats.%s.svc.%s" .Release.Name .Release.Namespace $.Values.k8sClusterDomain }}
 {{- end }}

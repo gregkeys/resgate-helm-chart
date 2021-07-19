@@ -6,7 +6,7 @@
 In this repo you can find the Helm 3 based [chart](hhttps://github.com/gregkeys/resgate-helm-chart/) to install Resgate.
 
 ```sh
-> helm repo add resgate https://github.com/gregkeys/resgate-helm-chart/
+> helm repo add resgate https://gregkeys.github.io/resgate-helm-chart/
 > helm repo update
 
 > helm repo list
